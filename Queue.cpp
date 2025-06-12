@@ -20,6 +20,6 @@ public:
         int num;
         cout << "enter a number:";
         cin >> num;
-        cout <<< endl;
+        cout << endl;
     }
-}
+};
