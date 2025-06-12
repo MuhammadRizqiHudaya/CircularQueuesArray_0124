@@ -53,5 +53,21 @@ public:
             cout << "\nqueue underflow\n" << endl;
             return;
         }
+        cout << "\n the element deleted from the queue is:" << queue_array[FRONT] << "\n";
+        if (FRONT == REAR)
+        {
+            FRONT = -1;
+            REAR = -1;
+        }
+        else
+        {
+            //jika elemen yang dihapus berada di posisi terakhir array kembali ke awal array
+            if (FRONT == max -1)
+            FRONT = 0;
+            else
+            FRONT = FRONT + 1;
+        }
     }
+
+    
 };
